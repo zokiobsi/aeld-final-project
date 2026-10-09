@@ -1,4 +1,8 @@
 build
+build-qemu
+build-rpi3
+downloads
 .vscode
 valgrind-out.txt
 test.sh.log
+sstate-cache
