@@ -69,6 +69,7 @@ add_layer "meta-networking" "../meta-openembedded/meta-networking"
 add_conf_line 'DISTRO_FEATURES:append = " wifi"'
 add_conf_line 'IMAGE_INSTALL:append = " wireless-regdb-static wpa-supplicant"'
 add_conf_line 'WIRELESS_REGDOM = "US"'
+add_conf_line 'IMAGE_INSTALL:append = " collector"'
 
 if [ "$TARGET" = "rpi3" ]; then
 	add_conf_line 'LICENSE_FLAGS_ACCEPTED += "synaptics-killswitch"'
